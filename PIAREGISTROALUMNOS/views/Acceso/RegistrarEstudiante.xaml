@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PIAREGISTROALUMNOS.views.Acceso.RegistrarEstudiante">
+    <ContentPage.Resources>
+        <Style x:Key="EntryStyle" TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="#" />
+            <Setter Property="TextColor" Value="#1A4293" />
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="Margin" Value="10,5" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="40" BackgroundColor="#F0F0F0">
+
+
+
+            <Entry x:Name="TxtNombre"            
+                   Placeholder="Nombres"  />
+            <Entry x:Name="TxtApellidos" 
+                   Placeholder="Apellidos"  />
+            <Entry x:Name="TxtMatricula"
+                   Placeholder="Matrícula" />
+            <Entry x:Name="TxtCarrera" 
+                   Placeholder="Carrera" />
+            <Entry x:Name="Txtcalificacion" 
+                   Placeholder="Calificación" Keyboard="Numeric" />
+
+            <!-- Botón de Registro -->
+            <Button Text="Registrar Alumno"
+                BackgroundColor="#007AFF" 
+                TextColor="White" 
+                HeightRequest="50"
+                CornerRadius="10"
+                Margin="10,20"
+                Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

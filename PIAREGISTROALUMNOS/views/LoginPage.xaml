@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PIAREGISTROALUMNOS.views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INGRESAR DATOS" TextColor="#333333" FontSize="28" HorizontalTextAlignment="Center" FontFamily="Arial Rounded MT Bold" />
+
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="20">
+                <StackLayout>
+                    <Entry Placeholder="Usuario" x:Name="Txtusuario" TextColor="#666666" BackgroundColor="#e0e0e0"/>
+                    <Entry Placeholder="Contraseña" x:Name="Txtcontraseña" TextColor="#666666" BackgroundColor="#e0e0e0" IsPassword="True"/>
+                    <Button Text="INGRESAR" FontSize="20" BackgroundColor="#ff6666" TextColor="White" CornerRadius="10" Clicked="Button_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
